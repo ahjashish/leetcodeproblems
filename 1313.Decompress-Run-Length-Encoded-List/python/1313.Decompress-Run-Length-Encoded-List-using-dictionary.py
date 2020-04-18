@@ -1,7 +1,7 @@
 class Solution:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
+# Solution with while loop
 
-	# Solution with while loop
         index = 0
         result = []
         while index < len(nums):
