@@ -15,4 +15,4 @@ print(decompressRLElist(nums))
  # calculate value from index two as we need 
  # value from second element to multiply with 
  # first element,and use extend method to
- # get everything in 1 list
+ # get everything in one list
