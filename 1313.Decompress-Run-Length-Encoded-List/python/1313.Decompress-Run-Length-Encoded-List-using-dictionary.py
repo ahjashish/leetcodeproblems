@@ -1,5 +1,4 @@
-class Solution:
-    def decompressRLElist(self, nums: List[int]) -> List[int]:
+def decompressRLElist(nums):
         index = 0
         result = []
         while index < len(nums):
@@ -7,7 +6,10 @@ class Solution:
             index +=2
         return result
 
+nums = [1,2,3,4]
+print(decompressRLElist(nums))
+nums = [1,1,2,3]
+print(decompressRLElist(nums))
+            
 # Solution with while loop
 
-
-        
