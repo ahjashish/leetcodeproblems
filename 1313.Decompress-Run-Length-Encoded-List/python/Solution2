@@ -1,0 +1,18 @@
+def decompressRLElist(nums):
+ 	result = []
+ 	for index in range(0,len(nums),2):
+ 		result.extend([nums[index+1]] * nums[index])
+ 	return result
+
+
+nums = [1,2,3,4]
+print(decompressRLElist(nums))
+nums = [1,1,2,3]
+print(decompressRLElist(nums)) 
+      
+ # Solution with extend method
+ # Loop from 0 to end of array with step two
+ # calculate value from index two as we need 
+ # value from second element to multiply with 
+ # first element,and use extend method to
+ # get everything in one list

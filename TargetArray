@@ -1,0 +1,15 @@
+def createTargetArray(nums,index):
+    target = []
+
+    for key,value in zip(index,nums):
+        target.insert(key,value)
+
+    return target
+
+print(createTargetArray([0,1,2,3,4],[0,1,2,2,1]))
+print(createTargetArray([1,2,3,4,0],[0,1,2,3,0]))
+
+    
+
+# iterate through index and nums with zip function
+# and insert key and value in the right place.

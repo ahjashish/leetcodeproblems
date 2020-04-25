@@ -1,0 +1,17 @@
+
+def findNumbers(nums):
+    count = 0
+    for index in nums:
+        if len(str(index))%2 == 0:
+            count+=1
+                
+    return count
+
+print(findNumbers([55,901,482,1771]))
+print(findNumbers([12,345,2,6,7896]))
+
+
+# Convert number to string and divide
+# without remaineder,we have to change
+# in the string to get real len of
+# the number given.
